@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <app-header-nav>
+            <ng-content select=".header"></ng-content>
+        </app-header-nav>
+        <section id="home">
+        <app-box1>
+            <ng-content select=".body"></ng-content>
+        </app-box1>
+        </section>
+        <div class="parent">
+            <section id="price" style="display: flex; justify-content: center;">
+                <h1>Pricing Debian</h1>
+                <img class="tableau" src="assets/images/tableau_debian.png" height="800px" width="1000px"/>
+            </section>
+            <section id="price" style="display: flex; justify-content: center;">
+                <h1>Pricing Wordpress</h1>
+                <img class="tableau" src="assets/images/tableau_wordpress.png" height="800px" width="1000px"/>
+            </section>
+            <section id="team" style="display: flex; justify-content: center;">
+                <h1>Team</h1>
+                <img class="card" src="assets/images/teams-card-AB.png" />
+                <img class="card" src="assets/images/teams-card-LB.png" />
+                <img class="card" src="assets/images/teams-card-ML.png" />
+                <img class="card" src="assets/images/teams-card-MD.png" />
+                <img class="card" src="assets/images/teams-card-NL.png" />
+            </section>
+        </div>
+        <app-footer></app-footer>
+    </body>
+</html>

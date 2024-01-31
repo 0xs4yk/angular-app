@@ -1,0 +1,33 @@
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* pour s'adapter à la hauteur de la page */
+  justify-content: space-between;
+  /* reduit l'espace entre les élément */
+  flex-wrap: wrap;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+}
+p {
+  display: block;
+  color: gray;
+  font-size: 1.125rem;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+h3 {
+  color: black;
+  font-size: 2.027rem;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+
+
+

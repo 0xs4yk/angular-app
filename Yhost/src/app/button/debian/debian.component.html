@@ -1,0 +1,45 @@
+<section>
+    <div class="button-style-splt" id="vm_debian">
+        <h3>Debian</h3>
+        <p>Simple Debian Hosting</p>
+        <hr>
+        <div class="Ram_selection">
+            <p>Ram : </p> 
+        
+            <div class="selection">
+                <input type="radio" id="D_ram256" name="D_ram" value="256" (change)="calculatePrice()" [(ngModel)]="ramValue">
+                <label for="D_ram256"><p>256 MB</p></label>
+            
+                <input type="radio" id="D_ram512" name="D_ram" value="512" (change)="calculatePrice()" [(ngModel)]="ramValue">
+                <label for="D_ram512"><p>512 MB</p></label>
+            
+                <input type="radio" id="D_ram1000" name="D_ram" value="1000" (change)="calculatePrice()" [(ngModel)]="ramValue">
+                <label for="D_ram1000"><p>1 GB</p></label>
+            
+                <input type="radio" id="D_ram2000" name="D_ram" value="2000" (change)="calculatePrice()" [(ngModel)]="ramValue">
+                <label for="D_ram2000"><p>2 GB</p></label>
+            </div> 
+        </div>
+        <div class="selection">
+            <p>CPU : </p>
+        
+            <div class="selection">
+                <input type="radio" id="D_cpu1" name="D_cpu" value="1" (change)="calculatePrice()" [(ngModel)]="memoryValue">
+                <label for="D_cpu1"><p>1 CPU</p></label>
+            
+                <input type="radio" id="D_cpu2" name="D_cpu" value="2" (change)="calculatePrice()" [(ngModel)]="memoryValue">
+                <label for="D_cpu2"><p>2 CPU</p></label>
+            
+                <input type="radio" id="D_cpu3" name="D_cpu" value="3" (change)="calculatePrice()" [(ngModel)]="memoryValue">
+                <label for="D_cpu3"><p>3 CPU</p></label>
+            </div> 
+        </div>
+        <hr>
+      <div class="order">        
+        <p>Price :</p>
+        <p class="price">{{ price | currency:'USD':true:'1.2-2' }}</p>
+      </div>
+      <button class="Buy-button" (click)="deploy()">ORDER</button>
+    </div>
+  </section>
+  
